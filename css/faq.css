@@ -1,0 +1,41 @@
+#heading{  
+    color: #8ac832;
+    
+    margin-top: 44px;
+    }
+.fa-chevron-circle-down:hover{
+     color:#8ac832;;
+
+    }
+#one, #two, #three, #four, #five, #six,
+#seven, #eight, #nine, #ten, #eleven, #twelve{
+   /* border: 3px solid #d9e0d92e;
+    box-shadow: 2px 2px 2px 2px #f1e8e838;*/
+    width: 65%;
+    height: 51px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    margin-left: 206px;
+}
+
+#qone, #qtwo, #qthree, #qfour, #qfive, #qsix,
+#qseven, #qeight, #qnine, #qten, #qeleven, #qtwelve{
+    color: black;
+    background-color: white;
+    height: 92px;
+    padding-left: 10px;
+    padding-top: 29px;
+    padding-right: 10px;
+}
+#qone:hover, #qtwo:hover, #qthree:hover, #qfour:hover, #qfive:hover, #qsix:hover,
+#qseven:hover, #qeight:hover, #qnine:hover, #qten:hover, #qeleven:hover, #qtwelve:hover{
+    color: #8ac832;
+
+}
+#aone, #atwo, #athree, #afour, #afive, #asix,
+#aseven, #aeight, #anine, #aten, #aeleven, #atwelve{
+    display: none;
+    color: black;
+    background-color: #f4f4f4;
+    padding: 10px 10px 10px 10px;
+}

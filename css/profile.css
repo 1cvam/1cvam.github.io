@@ -1,0 +1,73 @@
+#infinite-list {
+    /* We need to limit the height and show a scrollbar */
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+  
+    /* Optional, only to check that it works with margin/padding */
+    margin: 30px;
+    padding: 20px;
+    border: 10px solid black;
+  }
+  
+  /* Optional eye candy below: */
+  li {
+    padding: 10px;
+    list-style-type: none;
+  }
+  li:hover {
+    background: #ccc;
+  }
+#profiledp{
+    height: 340px;
+    width: 299px;
+    margin-left: 32px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+}
+#profiled{
+    padding-left: 10px;
+    margin-top: -19px;
+    
+}
+
+#profileinterest{
+    height: 131px;
+    width: 500px;
+    margin-left: 32px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+}
+
+
+#bat{
+    height: 300px;
+    width: 250px;
+    margin-left: 32px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+}
+
+#batdiv{
+    background-color: #8ac832;
+    color: white;
+    width: 153px;
+    height: 45px;
+    border-radius: 12px;
+    margin-left: 44px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 54px;
+    margin-top: 12px;
+}
+#givebat{
+    font-size: 19px;
+    margin-top: 29px;
+    padding-left: 24px;
+    padding-right: 10px;
+}
+#redeembat{
+    margin-top: 9px;
+    padding-left: 23px;
+    padding-right: 10px;
+}

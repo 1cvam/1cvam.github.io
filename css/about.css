@@ -1,0 +1,80 @@
+h5{
+    text-decoration: underline;
+}
+h5:hover{
+    color: #8ac832;
+}
+#abouthead{
+    text-align: center;
+}
+#firstabout{
+    font-size: 37px;
+    margin-left: 29px;
+    margin-top: -30px;
+}
+#secondabout{
+    font-size: 37px;
+    margin-left: 54px;
+    margin-top: -30px;
+}
+#thirdabout{
+    font-size: 37px;
+    margin-left: 58px;
+    margin-top: -30px;
+}
+#fourthabout{
+    font-size: 37px;
+    margin-left: 69px;
+    margin-top: -30px;
+}
+#firstabout:hover,#secondabout:hover,#thirdabout:hover,#fourthabout:hover{
+    color: #8ac832;
+}
+#aboutmain{
+    margin-top: 100px;
+    display: block;
+}
+#abouttext{
+    margin-left: 238px;
+    margin-right: 135px;
+
+}
+#worktext{
+    margin-left: 113px;
+    margin-right: 113px;
+    display: none;
+}
+h4{
+    text-shadow: 2px 2px 8px #8ac832;
+}
+#workone{
+    margin-right: 58px;
+}
+#worktwo{
+    margin-right: 58px;
+}
+#offertext{
+    margin-left: 113px;
+    margin-right: 113px;
+    display: none;
+}
+#one{
+    margin-right: 10%;
+    width: 20%;
+}
+#two{
+    margin-right: 10%;
+    width: 20%;
+}
+#three{
+    
+    width: 20%;
+}
+#benefittext{
+    margin-left: 113px;
+    margin-right: 113px;
+    display: none;
+}
+#benefitpoint{
+    margin-left: 238px;
+}

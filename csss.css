@@ -1,0 +1,138 @@
+
+
+<!------footer------------>
+
+
+.bg-footer {
+    background-color: #33383c;
+    padding: 50px 0 30px;
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: #acacac;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: #1bbc9b;
+}
+
+.contact-info {
+    color:black;
+    font-size: 14px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+.footer-alt {
+    color: #acacac;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid #1bbc9b;
+}
+
+
+.p-2{
+    text-align: center;
+    
+}
+
+
+.button2 {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  }
+
+
+
+  #incardone,#incardtwo,#incardthree,
+#incardthree,#incardfour,#incardfive,
+#incardsix,#bocardone,#bocardtwo,#bocardthree,
+#bocardthree,#bocardfour,
+#bocardsix{
+    
+    width: 386px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+ #incardoneone,#incardtwoone,#bocardoneone,#bocardtwoone{
+    height: 129px;
+    width: 139px;
+    background-color: #dbf2bb;
+    margin-top: 42px;
+    position: absolute;
+    right: 311px;
+}
+ 
+
+
+#insize,#bosize{
+    font-size: 11px;
+    margin-left: 259px;
+}
+#carddata{
+    margin-left: 100px;
+    font-size: 13px;
+    margin-top: -6px;
+    margin-right: 37px;
+}
+
+
+

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+    
+            <head>
+                    <link href="main.css" rel="stylesheet"/>
+                    <script src="jquery-1.10.2.min.js"></script>
+                    <script src="JQUERY%20main.js"></script>
+
+
+
+
+                    <link rel="stylesheet" type="text/css" href="csss.css">  
+                  
+                    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="home.js"></script>  
+
+
+
+
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+                 <style>
+                        .navbar-nav {min-height:100px !important
+                       
+                        }
+                        .navbar-nav > li > a  {margin-top:40px;}
+
+                        
+                        .img-img{
+                            margin-top:-30px;
+                        }
+                        
+
+
+
+
+                        .button {
+                            
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #8ac832;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top:40px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    height: 90vh;
+}
+
+.header-wrapper {
+    height: 100.2%;
+    width: 30vw;
+    min-width: 430px;
+    background-color: #000;
+    position: absolute;
+    top: -10;
+    left: 0;
+    z-index: 10001;
+    transform: translateX(-100%);
+}
+
+    .header-wrapper.expanded.has-notif .nav-sub-holder {
+        padding-top: 80px;
+    }
+
+.header-page-title, .header-search-input {
+    font-weight: 400;
+    padding: 0 24px;
+    line-height: 64px;
+}
+
+.header-wrapper:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222629;
+}
+
+.header-wrapper.expanded {
+    transform: skew(-20deg);
+    top: 0px;
+    direction: rtl;
+    pointer-events: none;
+}
+
+.nav-sub-holder {
+    z-index: 10005;
+    position: relative;
+    padding: 55px 10px;
+    direction: ltr;
+    transform: skew(20deg);
+}
+
+    .nav-sub-holder .inner-skew {
+        transform: skew(-20deg) translateX(-110px);
+        pointer-events: all;
+    }
+
+        .nav-sub-holder .inner-skew .inner-skew-back {
+            transform: skew(20deg) translateX(110px);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .nav-sub-holder .inner-skew h1 {
+            color: #fff;
+            font-size: 2.7rem;
+        }
+
+.home-slider-wrapper {
+    height: 90vh;
+    overflow: hidden;
+    background-color: #222629;
+}
+
+.homepage-slider {
+    width: 200vw;
+    padding-left: 36vw;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #202020;
+}
+
+    .homepage-slider .home-slide {
+        width: 40vw;
+        height: 100vh;
+        float: left;
+        transform: skew(-20deg) translate3d(0, 0, 0);
+        margin-left: -50px;
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden;
+        perspective: 1px;
+    }
+
+.home-slide-inner, .home-slide-inner h1 {
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.home-slide#slide1 {
+    margin-left: -6vw;
+    background-color: #4caf50;
+}
+
+.home-slide#slide3 {
+    background-color: #03a9f4;
+}
+
+.home-slide#slide2 {
+    width: 30vw;
+    margin-left: -90px;
+}
+
+#slide1.over, .home-slide#slide1:hover {
+    width: 56vw;
+}
+
+.home-slide#slide2:hover {
+    width: 40vw;
+    margin-right: -5vw;
+    margin-left: -8vw;
+}
+
+.home-slide#slide3:hover {
+    width: 70vw;
+    margin-left: -22vw;
+}
+
+.home-slide .para {
+    display: none;
+}
+
+.homepage-slider .home-slide:hover .home-slide-inner p.para {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 46px;
+    width: 53%;
+    left: 30%;
+    margin: 35px 0 0px;
+    line-height: 3vw;
+}
+
+.home-slide-inner {
+    height: 100%;
+    width: 70vw;
+    background-color: #4CAF50;
+    background-size: cover;
+    transform: skew(20deg) translateX(-20%) translate3d(0, 0, 0);
+    cursor: context-menu;
+}
+
+#slide1 .home-slide-inner {
+    background-color: #4CAF50;
+    background-image: url(../../assest/img/bo.png);
+}
+
+#slide2 .home-slide-inner {
+    background-image: url(../../assest/img/bo.png);
+}
+
+#slide3 .home-slide-inner {
+    background-color: #03a9f4;
+    background-image: url(../../assest/img/bo.png);
+}
+
+#slide1.over, .home-slide#slide1:hover .home-slide-inner {
+    background-image: none;
+    background-color: #ffffff;
+}
+
+#slide3.over, .home-slide#slide3:hover .home-slide-inner {
+    background-image: none;
+    background-color: #ffffff;
+}
+
+    #slide1.over .home-slide-inner, .home-slide#slide1:hover .home-slide-inner,
+    #slide3.over .home-slide-inner, .home-slide#slide3:hover .home-slide-inner {
+        transform: skew(20deg) translateX(-12%) translate3d(0, 0, 0);
+    }
+
+.home-slide:hover .home-slide-inner:before {
+    content: '';
+    z-index: 0;
+    transition: .2s ease-out;
+    background: -webkit-linear-gradient(-90deg,#fff 0,#f2f2f2 85%);
+    background: -moz-linear-gradient(-90deg,#fff 0,#f2f2f2 85%);
+    background: linear-gradient(-90deg,#fff 0,#f2f2f2 85%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.home-slide.greyed-out {
+    filter: grayscale(100%);
+}
+
+.home-slide-inner h1 {
+    bottom: 30%;
+    width: 53%;
+    left: 20%;
+    color: #FFF;
+    margin: 35px 0 0px;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 3vw;
+    cursor: context-menu;
+    text-shadow: 2px 2px #0000007d;
+}
+
+.homepage-slider .home-slide:hover .home-slide-inner h1 {
+    color: #000000;
+    text-shadow: none;
+    display: none;
+}
+
+.home-slide-inner .filledbutton {
+    border: none;
+    border-radius: 50px;
+    display: inline-block;
+    opacity: 0;
+    font-weight: 700;
+    text-transform: none;
+    transition: all .5s ease;
+    font-size: 18px;
+    width: 200px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.home-slide-inner h1 .filledbutton {
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .home-slide-inner h1 .filledbutton {
+        display: inline-block;
+    }
+
+    .homepage-slider .home-slide:hover .home-slide-inner h1 {
+        color: #000000;
+        text-shadow: none;
+        display: block;
+    }
+
+    .homepage-slider .home-slide:hover .home-slide-inner p.para {
+        display: none;
+    }
+}
+
+#slide1 .filledbutton {
+    background: transparent;
+    border: 2px solid #449b48;
+    color: #449b48;
+}
+
+#slide3 .filledbutton {
+    background: transparent;
+    border: 2px solid #03a9f4;
+    color: #03a9f4;
+}
+
+@media only screen and (max-width:1200px) {
+    .header {
+        position: relative;
+        left: 0;
+        z-index: 10;
+        height: auto;
+    }
+
+    .header-wrapper {
+        position: relative;
+        width: 100vw;
+        min-width: 1px;
+        background-color: #202020;
+        top: 0;
+    }
+
+        .header-wrapper.expanded {
+            transform: none;
+            width: auto;
+        }
+
+    .nav-sub-holder {
+        padding: 0;
+        transform: none;
+    }
+
+        .nav-sub-holder .inner-skew {
+            overflow: visible;
+            transform: none;
+        }
+
+            .nav-sub-holder .inner-skew .inner-skew-back {
+                transform: none;
+                max-height: 100vh;
+                overflow: auto;
+                padding: 64px 16px;
+            }
+
+            .nav-sub-holder .inner-skew h1 {
+                color: #fff;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+    .home-slider-wrapper {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .homepage-slider {
+        width: 100vw;
+        padding-left: 0;
+    }
+
+    .home-slide#slide1 {
+        margin-left: 0vw;
+        background-color: #4caf50;
+    }
+
+    .homepage-slider .home-slide {
+        width: 50vw;
+        height: auto;
+        float: left;
+        transform: none;
+        margin-left: 0;
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden;
+        perspective: 1px;
+    }
+
+    .home-slide-inner, .home-slide-inner h1 {
+        position: absolute;
+        transition: all .5s ease;
+    }
+
+        .home-slide-inner .filledbutton {
+            display: inline-block;
+            opacity: 1;
+            margin-top: 15px;
+        }
+
+        .home-slide-inner h1 {
+            left: 0;
+            right: 0;
+            margin: 20px auto;
+        }
+
+        .home-slide-inner h1 {
+            left: auto;
+            font-size: 25px;
+            text-align: center;
+            line-height: 24px;
+            width: 100%;
+            top: 0;
+            margin: 0;
+            bottom: auto;
+            position: relative;
+        }
+
+    .homepage-slider .home-slide:hover .home-slide-inner h1 {
+        color: #ffffff;
+    }
+
+    #slide1.over .home-slide-inner, .home-slide#slide1:hover .home-slide-inner {
+        transform: none;
+        background-image: url(../../assest/img/bo.png);
+    }
+
+    #slide3.over, .home-slide#slide3:hover .home-slide-inner {
+        background-image: url(../../assest/img/Investor.png);
+        background-color: #ffffff;
+    }
+
+
+#slide1.over .home-slide-inner, .home-slide#slide1:hover .home-slide-inner,
+        #slide3.over .home-slide-inner, .home-slide#slide3:hover .home-slide-inner {
+            transform: none;
+        }
+
+    .home-slide:hover .home-slide-inner:before {
+        background-image: none;
+        transition: none;
+    }
+
+    #slide1.over, .home-slide#slide1:hover {
+        width: 50vw;
+    }
+
+    .home-slide#slide3:hover {
+        width: 50vw;
+        margin-left: 0vw;
+    }
+
+    .home-slide-inner {
+        height: 100%;
+        width: 50vw;
+        padding: 100px;
+        background-size: cover;
+        transform: none;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .homepage-slider .home-slide {
+        width: 100%;
+        margin-left: 0;
+        transform: none;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .home-slide#slide1 {
+        margin-left: 0vw;
+        background-color: #4caf50;
+    }
+
+    .home-slide#slide2 {
+        width: 100%;
+        margin: 0;
+    }
+
+        .home-slide#slide2:hover {
+            width: 100%;
+            margin: 0;
+        }
+
+    .home-slide-inner {
+        width: 100%;
+        transform: none;
+        background-color: #60bc57;
+        background-image: none;
+        position: relative;
+        padding: 20px;
+    }
+
+    #slide1.over, .home-slide#slide1:hover {
+        width: 100%;
+        margin: 0;
+    }
+
+    #slide1 .home-slide-inner {
+        background-image: none;
+        background-color: #4CAF50;
+    }
+
+    #slide3 .home-slide-inner {
+        background-image: none;
+        background-color: #58c7f2;
+    }
+
+    #slide1.over .home-slide-inner, .home-slide#slide1:hover .home-slide-inner {
+        transform: none;
+    }
+
+    .home-slide#slide3:hover {
+        width: 100%;
+        margin: 0;
+    }
+
+    .home-slide-inner h1 {
+        left: auto;
+        font-size: 20px;
+        line-height: 24px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+        bottom: auto;
+        position: relative;
+    }
+
+    .home-slide-inner .filledbutton {
+        display: inline-block;
+        opacity: 1;
+        margin-top: 15px;
+    }
+
+    #slide1 .filledbutton {
+        background: #449b48;
+        color: #fff;
+    }
+
+    #slide3 .filledbutton {
+        background: #03a9f4;
+        color: #fff;
+    }
+}
+
+#slide1 .filledbutton:hover {
+    background: #449b48;
+    color: #ffffff;
+}
+
+#slide3 .filledbutton:hover {
+    background: #03a9f4;
+    color: #ffffff;
+}
+
+.home-slide.hover .filledbutton, .home-slide:hover .filledbutton {
+    opacity: 1;
+}
+
+.home-slide .revealtext {
+    opacity: 0;
+    display: none;
+}
+
+.home-slide:hover .revealtext {
+    opacity: 1;
+    display: block;
+}    
+
+footer{
+padding-top: 5rem;
+padding-bottom: 5rem;
+background-image: url(../img/line-pattern.svg);
+background-size: 20px;
+z-index: 9;
+background-color: #fff;
+position: relative;
+border-top: 1px solid #f1f1f1;}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+                        </style> 
+                </head>
+    <body>
+
+
+
+
+        <nav class="navbar navbar-default" >
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand img-img" href="#"><img src="assets/img/ExMyB_Logo.png" width="160px"</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li class=""><a href="#">Home</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Page 1-1</a></li>
+                          <li><a href="#">Page 1-2</a></li>
+                          <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Page 2</a></li>
+                      <li><a href="#">Page 3</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                     
+                      <li><button class="button" style="vertical-align:middle"><span>Login </span></button></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+
+
+
+
+              <!-- Masthead -->
+   
+    <section class="header">
+            <div class="header-wrapper  expanded">    
+                          
+                      <div class="nav-sub-holder">
+                          <div class="inner-skew">
+                              <div class="inner-skew-back">
+                                  <h1 class="wow fadeInLeft">Build a landing page for your business or project and generate more leads!</h1>
+                              </div>
+                          </div>
+                      </div>
+              
+              </div>
+          </section>
+          
+          
+          <!--===============================
+          Masthead 2
+          ================================-->  
+          
+
+          
+          <div class="home-slider-wrapper">
+                <div class="homepage-slider">
+                    <div class="home-slide" id="slide1">
+        
+                        <div class="home-slide-inner">
+        
+                            <div class="home-slider-holder">
+                                <div class="slider-inner-skew">
+                                    <div class="slider-inner-skew-back">
+                                        <h4>Connect with:</h4>
+                                        <ul class="fa-ul d-flex flex-row">
+                                            <li>
+                                                <a href="list?investment">
+                                                    <img src="../img/invest-round.svg" class="fa-li">Investors</a></li>
+                                            <li>
+                                                <a href="list?business">
+                                                    <img src="../img/business-round.svg" class="fa-li">Fellow Business Owners</a></li>
+                                        </ul>
+                                        <a href="business" class="filledbutton">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <h1><small>I am a</small><br>
+                                Business Owner<br>
+                                <a href="business" class="filledbutton">Read More</a>
+                            </h1>
+                            <p class="para">Here is your chance to get connected with experts and experienced investors in your industry and help pave the way forward for your business expansion.</p>
+        
+                        </div>
+                    </div>
+                    <div class="home-slide" id="slide3">
+                        <div class="home-slide-inner">
+        
+                            <div class="home-slider-holder">
+                                <div class="slider-inner-skew">
+                                    <div class="slider-inner-skew-back">
+                                        <h4>Connect with:</h4>
+                                        <ul class="fa-ul d-flex flex-row">
+                                            <li>
+                                                <a href="list?business">
+                                                    <img src="../img/business-round.svg" class="fa-li">Business Owners</a></li>
+                                            <li>
+                                                <a href="list?investment">
+                                                    <img src="../img/invest-round.svg" class="fa-li">Fellow Investors</a></li>
+                                        </ul>
+                                        <a href="investor" class="filledbutton">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <h1><small>I am an</small><br>
+                                Investor<br>
+                                <a href="investor"><span class="filledbutton">Read More</span></a>
+                            </h1>
+                            <p class="para">All deals are not made in heaven! Let ExMyB help find a tailor-made deal just for you and put an end to irrelevant deals crowding your inbox!</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+              <div class="container">
+<div class= "row">
+
+
+    <div class="col-md-6">
+
+        <img src="../../assets/img/website1.png" width="500px">
+    </div>
+    
+<div class="col-md-6">
+
+
+   
+        <div id="bathometext">
+            <div id="battext">
+                <h3>Give the BAT and find out where you<br>
+                    <br><strong>really stand in the eyes of a
+                    distinguished investor!</strong><br><br>
+                
+                 To know more about the BAT,
+ <button class="button" style="vertical-align:middle"><span>Enroll NOW @ Rs 1,000</span></button> </h3>
+    
+                 
+                 
+                 
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<h3></h3>
+<br><br><br>
+<button class="button2">OVERVIEW</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<br><br><br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"> 
+
+                <div class="panel panel-default">
+                        <div class="panel-body"><div class="d-flex justify-content-start">
+                                <div class="d-flex flex-column" text-align="center"> 
+                                <div class="p-2">
+                                        <img src="../assets/img/Artboard-6.png" 
+                                        style="width: 250px;
+                                    ">
+                                 <small>    <h4><b>Startups</b></h4> </small> 
+                                </div>
+                                
+                                <div class="p-2"> 
+                                    <p>We help Startups / SMEs / Business owners get connected with 
+                                       the investors for the funds you want to raise to expand your business.</p>
+                                </div>
+                               </div> </div></div></div>
+                      </div>
+            
+            
+            
+
+
+
+        <div class="col-md-4">
+
+
+                <div class="panel panel-default">
+                        <div class="panel-body"> 
+                                <div class="d-flex justify-content-start"> 
+                                    <div class="d-flex flex-column" style="margin-top: 6px; margin-right: 54px;">
+                                        
+                                    <div class="p-2">
+                                            <img src="assets/img/Artboard-7.png" 
+                                            style="width: 220px;
+                                            ">
+                                    <small>     <h4><b>Our Platform</b></h4></div></small> 
+                                    <div class="p-2">
+                                        <p>We help Startups / SMEs / Business owners get connected with 
+                                           the investors for the funds you want to raise to expand your business.</p>
+                                    </div>
+                                </div>
+                            </div></div>
+                      </div>
+           </div>
+        <div class="col-md-4">
+
+
+                <div class="d-flex flex-column">
+
+
+
+                        <div class="panel panel-default">
+                                <div class="panel-body"> <div class="p-2">
+                                        <img src="assets/img/Artboard-8.png" 
+                                        style="width: 250px;
+                                        ">
+                                       <small>  <h4><b>Investors</b></h4></div></small> 
+                                    <div class="p-2"> 
+                                        <p>We help Startups / SMEs / Business owners get connected with 
+                                           the investors for the funds you want to raise to expand your business.</p>
+                                    </div>
+                                </div> </div>
+                              </div>
+            
+                       
+
+
+
+        </div>
+
+
+        
+        <div class="col-md-12">
+             
+                <br><br><br><br>
+                <button class="button2">  INVESTORS </button>
+                
+            </div>
+
+
+    </div>
+</div>
+
+
+
+
+<br><br>
+
+
+
+
+<div class="container">
+    <div class="row" >
+        
+
+        
+       
+              
+
+                <div class="col-md-6"> <div id="incard" class="d-flex justify-content-around">
+                    <div class="owl-carousel">
+                <div id="incardone">
+                    <div id="incardoneone"></div>
+                   <span class="label label-default">5 lakh - 5 crore</span>
+                    <p id="carddata" style="margin-right: 37px;">
+                    <a>
+                        <br>
+                        <i class="fa fa-user-circle" style="font-size:24px"  ></i> <b>Consultant at PWC</b> <br>
+                    </a>
+                    <br>
+                     <a><b>Description:</b>Director, Online Services, Individual Buyer, Gurgaon, India
+                     </a>
+                     <br><br><br>
+                     <a><b><i class="fa fa-map-marker" style="font-size:24px"></i></b> Delhi, Gurgaon, Navi Mumbai
+                     </a>
+                     <br><br><br><br><br>
+                    
+                    </p>
+                   
+                </div>
+                    </div>
+                </div></div>
+
+                <div class="col-md-6"> <div id="incard" class="d-flex justify-content-around">
+                        <div class="owl-carousel">
+                    <div id="incardone">
+                        <div id="incardoneone"></div>
+                       <span class="label label-default">5 lakh - 5 crore</span>
+                        <p id="carddata" style="margin-right: 37px;">
+                        <a>
+                            <br>
+                            <i class="fa fa-user-circle" style="font-size:24px"  ></i> <b>Consultant at PWC</b> <br>
+                        </a>
+                        <br>
+                         <a><b>Description:</b>Director, Online Services, Individual Buyer, Gurgaon, India
+                         </a>
+                         <br><br><br>
+                         <a><b><i class="fa fa-map-marker" style="font-size:24px"></i></b> Delhi, Gurgaon, Navi Mumbai
+                         </a>
+                         <br><br><br><br><br>
+                        
+                        </p>
+                       
+                    
+                        </div>
+                    </div></div>
+
+
+                    
+
+                </div></div></div>
+
+                
+
+<div class="container">
+
+
+<div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-4">
+        <div id="pre">
+                PREVIOUS
+            </div>
+            <div id="main">
+                <div id="side1">
+                    <img src="AGRA.jpg" height="100%" width="100%"/>
+                </div>
+                <div id="side2">
+                    <img src="NEW%20YORK.jpg" height="100%" width="100%"/>
+                </div>
+                <div id="side3">
+                    <img src="PARIS.jpg" height="100%" width="100%"/>
+                </div>
+            </div>
+            <div id="nex">
+                NEXT
+            </div></div>
+
+
+            <div class="col-md-3"></div>
+
+        </div></div><br><br><br><br><br><br><br>
+        <br>
+
+
+<footer class="section bg-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="">
+                    <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Feuchers</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="">
+                    <h6 class="footer-heading text-uppercase text-white">Ressources</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li><a href="">Monitoring Grader </a></li>
+                        <li><a href="">Video Tutorial</a></li>
+                        <li><a href="">Term &amp; Service</a></li>
+                        <li><a href="">Zeeko API</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="">
+                    <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li><a href="">Sign Up </a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Terms of Services</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="">
+                    <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                    <p class="contact-info mt-4">Contact us if need help withanything</p>
+                    <p class="contact-info">+01 123-456-7890</p>
+                    <div class="mt-5">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab apple footer-social-icon fa-apple"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <p class="footer-alt mb-0 f-14">2019 © ExMyB, All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+</html>
