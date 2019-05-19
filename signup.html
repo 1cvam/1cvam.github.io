@@ -1,135 +1,208 @@
-<div class="container-login" style="margin-left: 426px;
-		width: 459px;
-    height: 660px;
-        padding: 10px;
-        box-shadow: 2px 2px 2px 2px #8ac832;">
-			<div class="wrap-signup p-l-110 p-r-110 p-t-62 p-b-33">
-				<form class="signup-form validate-form flex-sb flex-w">
-					<span class="signup-form-title p-b-53" id="topbut">
-						<button class="topbone" style="margin-left: -59px;">Log In</button>
-						<button class="topbtwo" style="margin-left: 124px;">Sign Up</button>
-					</span>
-          
-          
-          
-          <div class="p-t-31 p-b-9">
-              <span class="txt1">
-                First Name
-              </span>
-            </div>
-            <div class="wrap-input100 validate-input" 
-            data-validate = "First Name is required">
-              <input class="input100" type="text" name="First Name" >
-              <span class="focus-input100"></span>
-            </div>
-            
-          
-          
-          
-          
-          
-          <div class="p-t-31 p-b-9">
-              <span class="txt1">
-                  Last Name
-              </span>
-            </div>
-            <div class="wrap-input100 validate-input" 
-            data-validate = "Last Name is required">
-              <input class="input100" type="text" name="Last Name" >
-              <span class="focus-input100"></span>
-            </div>
-            
-          
-          <div class="p-t-31 p-b-9">
-						<span class="txt1">
-							Email
-						</span>
-					</div>
-					<div class="wrap-input100 validate-input" 
-					data-validate = "Email is required">
-						<input class="input100" type="email" name="email" >
-						<span class="focus-input100"></span>
-          </div>
-          
-          <div class="p-t-31 p-b-9">
-              <span class="txt1">
-                Phone No.
-              </span>
-            </div>
-            <div class="wrap-input100 validate-input" 
-            data-validate = "Phone No. is required">
-              <input class="input100" type="text" name="Phone No." >
-              <span class="focus-input100"></span>
-            </div>
-					
-          
-          <div class="p-t-13 p-b-9">
-						<span class="txt1">
-							Password
-						</span>
-          </div>
-          
-          <div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" >
-						<span class="focus-input100"></span>
-					</div>
+<!DOCTYPE html>
+<html>
+	<header>
+			<link rel="stylesheet" type="text/css" href="./css/signup.css">
+			<link rel="stylesheet" type="text/css" href="./css/foot.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+			<link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+			<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	</header>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				
+				<div class="col-md-4" id="main">
+						
+					<div class="row">
 
-          <div class="p-t-13 p-b-9">
-              <span class="txt1">
-                Confirm Password
-              </span>
-            </div>
-            
-            <div class="wrap-input100 validate-input" data-validate = "Confirm Password is required">
-              <input class="input100" type="password" name="pass" >
-              <span class="focus-input100"></span>
-            </div>
+              <div class="col-md-3"></div>
+							
+							<div class="col-lg-6">
+								<center> 
+									<a type="button" role="button" href="login.html" id="log">Log In</a>
+									<a type="button" role="button" href="signup.html" id="sign">Sign Up</a>
+								</center> 
+							</div>
 
-            
-					<div class="container-signup100-form-btn m-t-17">
-						<button class="signup100-form-btn">
-							Sign Up
-						</button>
-					</div>
-					
-					<div class="d-flex justify-content-around">
-						   
-							<div>
-								<hr width="90px" style="margin-top: 11px; background-color: black;">
-							</div>	
-						  <div>
-							<h6>or connect with</h6>
-						 </div>	
-						 <div>
-						  <hr width="90px" style="margin-top: 11px; background-color: black;">
-						 </div>
-					</div> 
-                
-          
-          <div>
-						<p class="d-flex justify-content-around">
-				          
-								<a href="#" class="btn-face m-b-20" id="linked">
-										<i class="fa fa-linkedin"> 
-											
-										</i>
-									
-								</a>
-							  
-								<a href="#" class="btn-google m-b-20" id="google">
-									<i class="fa fa-google"> 
+							<div class="col-md-3"></div>
+
+							<div class="w-100"></div>
+
+                <div class="col-md-6" style="padding-left:15px;">
+                  <span>Name</span>
+                    <div class="wrap-input100 validate-input" 
+                          data-validate = "Name is required">
+                            <input class="input100" type="text" name="name" 
+                                   style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                              <span class="focus-input100"></span>
+                    </div>
+								</div>
+								
+							<div class="w-100"></div>
+								
+							  <div class="col-md-6" style="padding-left:15px;">
+                              <span>Email</span>
+                            
+                              <div class="wrap-input100 validate-input" 
+                                 data-validate = "Email is required">
+                                 <input class="input100" type="text" name="email" 
+                                 style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                                 <span class="focus-input100"></span>
+                              </div>
+								</div>
+								
+							<div class="w-100"></div>
 										
-									</i>
-								</a>
-						 
-						</p>	 
+							  <div class="col-md-6" style="padding-left:15px;">
+                              <span>Phone No.</span>
+                            
+                              <div class="wrap-input100 validate-input" 
+                                 data-validate = "Phone No. is required">
+                                 <input class="input100" type="text" name="phone no." 
+                                 style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                                 <span class="focus-input100"></span>
+                              </div>
+								</div>
+									
+              <div class="w-100"></div>
+
+                <div class="col-md-6" style="padding-left:15px;">
+                    <span>Password</span>
+                      <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                                <input class="input100" type="password" name="pass"
+                                style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                                <span class="focus-input100"></span>
+                      </div>
+								</div>
+
+							<div class="w-100"></div>
+
+                <div class="col-md-6" style="padding-left:15px;">
+                    <span>Confirm Password</span>
+                      <div class="wrap-input100 validate-input" data-validate = "Confirm Password is required">
+                                <input class="input100" type="password" name="confirmpass"
+                                style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                                <span class="focus-input100"></span>
+                      </div>
+								</div>
+								
+							<div class="w-100"></div>
+
+                <div class="col-md-6" style="padding-left:15px;">
+                    <span>OTP</span>
+                      <div class="wrap-input100 validate-input" data-validate = "OTP is required">
+                                <input class="input100" type="text" name="otp"
+                                style="box-shadow: 1px 1px 2px 2px #e6ecdd70;">
+                                <span class="focus-input100"></span>
+                      </div>
+                </div>
+										
+										
+							<div class="w-100"></div>
+
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <br>
+                        <center>
+                          <button type="button" class="btn" 
+                          style="background-color: #8ac832;color:white;border: none;">Sign Up</button>
+                        </center>
+                    </div>
+                    <div class="col-md-4"></div>
+
+                    <div class="w-100"></div>
+
+
+                    <div class="col-md-12">
+                        <center>
+                        <hr class="line">or Connect With<hr class="line">
+                        </center>
+										</div>
+										
+                    <div class="col-md-3"></div>
+                    <div class="col-lg-6">
+                        <center> 
+                                <button href="#" class="fab fa-google" id="connectgoogle"></button>
+                                <button href="#" class="fab fa-linkedin-in" id="connectlink"></button>
+                                
+                        </center>  
+                    </div>
+                    <div class="col-md-3"></div>
+					</div>	
+				
 				</div>
-				 		 
+				
+				<div class="col-md-4"></div>
+				<div class="col-md-12">
+						<center>
+						<h6>By signing up you agree to our <a href="tandc.html">Terms of Service</a> 
+								and <a href="pp.html">Privacy Policy</a></h6>
+						</center>    
+				</div>  
 
-					
-				</form>
-			</div>
+			</div>	
+		</div>	
+	</body>
+	<footer>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-    
-</div>
-	
+			<hr>
+			<div class="container text-center text-md-left"
+					 style= "background-color:white; font-size: 15px; height:100px;">
+			
+						<div class="row">
+									
+							<div class="col-md-2 mx-auto">
+								 <img src="./assets/img/ExMyB_Logo.png" style="width: 115px; height: 130px; margin-top: -42px;">
+								 <br>
+								<p style="margin-top: -30px; padding-left: 21px;"> <small>© 2018-2019</small></p>
+							</div>
+							
+							<div class="col-md-2 mx-auto">
+							 <h5>About</h5>
+							 <ul class="list-unstyled" >
+											<li><a href="about.html" style=" color :black;">About us</a></li>
+											<li><a href="bocards.html" style=" color :black;">For Business Owners</a></li>
+											<li><a href="incards.html" style=" color :black;">For Investors</a></li>
+							 </ul>
+							</div> 
+						 
+							<div class="col-md-2 mx-auto">
+								<h5>Explore</h5>
+								<ul class="list-unstyled">
+									<li><a href="login.html" style=" color :black;">Login</a></li>
+									<li><a href="faq.html" style=" color :black;">FAQs</a></li>
+									<li><a href="blog.html" style=" color :black;">Blog</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-md-2 mx-auto">
+								<h5>Follow Us</h5>
+								<ul class="list-unstyled">
+								<li>
+									<a class="fab fa-facebook-f" 
+										 href="https://www.facebook.com/ExMyB/" 
+										 id="fb"></a>
+									<a class="fab fa-instagram" 
+									 href="https://www.instagram.com/ExMyB/" 
+									 id="insta"></a>
+									<a class="fab fa-linkedin-in" 
+									 href="https://www.linkedin.com/company/expand-my-business/" 
+									 id="lin">
+									</a>
+								</li> 
+								</ul>    
+							</div>
+			
+				 <div class="col-md-2 mx-auto">
+							<h5>Contact</h5>
+							<p style="color: #6a6e71">contact@exmyb.com</p>
+				 </div>
+			
+						</div>
+
+			</div>     
+	</footer>
+</html>
+

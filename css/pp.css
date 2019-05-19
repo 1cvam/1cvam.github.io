@@ -1,9 +1,13 @@
-#pphead{  
+#pphead{
+    font-size: 29px;
+    color: black;
+    text-decoration: underline;
+}
+#pphead:hover{  
+    font-size: 31px;
     color: #8ac832;
-    margin-left: 520px;
-    }
+    text-decoration: underline;
+}
 #ppmain{
-    padding: 37px 37px 37px 37px;
-    margin-left: 152px;
-    margin-right: 152px;
+    padding: 30px;
 }

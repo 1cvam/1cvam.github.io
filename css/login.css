@@ -8,6 +8,8 @@
     background-color: #8ac832;
     color:white;
     border: none;
+    text-decoration: none;
+    padding: 10px;
 }
 #log:hover,#sign:hover{
     background-color: #dbf2bb;
