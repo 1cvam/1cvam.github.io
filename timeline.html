@@ -1,45 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <style>
+   .panel-heading{
+	text-align: center;
+}
+.panel-info{
+	padding: 10px;
+	font-size: 1.2em;
+}
+p{
+	size: 30px;
+}
+.upcoming, .requests{
+	text-align: center;
+}
+img.profile{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*max-width: 50%;*/
+	height: 150px;
+}
 
-  <style>
-  .box{
-      background-color:black;
-    height:200px}
-      </style>
-</head>
-<body>
+a.edit{
+	text-decoration: none;
+	color: black;
+}
+
+@media(max-width: 768px){
+	img.events{
+		display: block;
+		margin: 0 auto;
+	}
+}
+   
+   </style>
+  </head>
+  <body>
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Socio Media</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"">
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="form-control btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">My Profile</div>
+              <div class="panel-body">
+                <img class="img-responsive profile" src="images/download.png">
+                <p><i class="fa fa-pencil fa-2x" aria-hidden="true"></i>Designer, UI</p>
+                <p><i class="fa fa-home fa-2x" aria-hidden="true"></i>India</p>
+                <p><i class="fa fa-birthday-cake fa-2x" aria-hidden="true"></i>September 12,1997</p>
+                <p><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i><a class="edit" href="#">Edit Profile</a></p>
+              </div>
+            </div>
+            <div class="panel panel-default fadeInDown">
+              <div class="panel-body">
+                <p>"We are working on other fun stuffs to make your life easier."</p>
+                <p>"Stay connected &amp; stay tuned!!!! Wlaaaahh"</p>
+                <p><blockquote>Yash Aggarwal</blockquote></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel panel-info">
+              <p>What's on your mind ?</p>
+              <input class="form-control" type="text" name="" placeholder="Status"><br>
+              <button type="button" class="btn btn-md btn-success"><i class="fa fa-pencil" aria-hidden="true"></i>Post</button>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <span class="text-muted">Posted by:</span>
+                <p><strong>Yash Aggarwal</strong><span class="text-muted" style="float: right"><i class="fa fa-clock-o" aria-hidden="true"></i>12:09 p.m.</span></p>
+                <p>If you're changing the world, you're working on important things. You're excited to get up in the morning. Success is a lousy teacher. It seduces smart people into thinking they can't lose.
+                We make the future sustainable when we invest in the poor, not when we insist on their suffering.
+                Your most unhappy customers are your greatest source of learning.It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all, in which case you have failed by default.
+                It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.</p>
+                <button type="button" class="btn btn-success"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Like</button>
+                <button type="button" class="btn btn-danger"><i class="fa fa-smile-o" aria-hidden="true"></i></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-commenting-o" aria-hidden="true"></i>Comment</button>
+                <button type="button" class="btn btn-default" style="float: right;"><i class="fa fa-tag" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+            <div class="panel panel-info upcoming">
+              <p>Upcoming Events:</p>
+              <img class="img-responsive events" src="images/events.jpeg">
+              <p style="margin-top: 15px;"><strong>Holiday</strong></p>
+              <p>Friday, 25</p>
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+            <div class="panel panel-default requests">
+              <div class="panel-body">
+                <p>Suggestions &amp; Friend Requests</p>
+                <img src=""><i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                <p><strong>Samar Ninja</strong></p>
+                <button type="button" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-danger"><i class="fa fa-user-times" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="panel panel-default">
+            <div class="panel-heading">Like us on:</div>
+              <div class="panel-body">
+              <ul class="item">
+
+              </ul>
+              </div>
+            </div>
+          </div>
 
 
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-        <div class="box">
-            
-            
-            
-            
-         <center> <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fneemgold.com%2Fimages%2Fclients%2Ft-1.png&f=1" width="50%" border-radius= "50%"></div></center>  
-     
-    </div>
-    <div class="col-sm-7">
-            <div class="box">.</div>
-     
-    </div>
-    <div class="col-sm-2">
-            <div class="box">.</div>
-     
-    </div>
-  </div>
-</div>
-
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
