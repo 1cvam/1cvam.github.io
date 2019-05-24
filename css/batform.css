@@ -1,13 +1,27 @@
-#formdiv{
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 
-              0 4px 20px 0 rgba(0,0,0,0.19);
+#div_one{
+    background-color: #8ac832;
     height: auto;
 }
-
-#indiv{
-    background-color: #8ac832;
-    margin: 20px 20px 20px 20px;
+#div_two{
+    background-color: white;
+    height: auto;
 }
-h3.panel-title{
-   color: white;
+#div_main{
+    background-color: #e4dede54;
+    height: auto;
+    
+}
+.border-gradient {
+    border-image-slice: 1;
+    border-width: 50px;
+  }
+.border-gradient-green {
+        border-image: linear-gradient(to left, #00C853, #B2FF59);
+}
+.input_one{
+    
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+    
 }

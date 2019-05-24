@@ -7,7 +7,7 @@
 #log,#sign{
     background-color: #8ac832;
     color:white;
-    border: none;
+    border: transparent;
     text-decoration: none;
     padding: 10px;
 }

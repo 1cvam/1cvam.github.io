@@ -1,13 +1,9 @@
 #tchead{
     font-size: 29px;
-    color: black;
-    text-decoration: underline;
-}
-#tchead:hover{  
-    font-size: 31px;
     color: #8ac832;
     text-decoration: underline;
 }
+
 #points{
     padding:30px;
 }

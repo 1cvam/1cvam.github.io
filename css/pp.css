@@ -1,13 +1,9 @@
 #pphead{
     font-size: 29px;
-    color: black;
-    text-decoration: underline;
-}
-#pphead:hover{  
-    font-size: 31px;
     color: #8ac832;
     text-decoration: underline;
 }
+
 #ppmain{
     padding: 30px;
 }
