@@ -1,3 +1,6 @@
+*{
+    font-family: Maven Pro;
+}
 #main{
     height: auto;
     padding: 10px;
@@ -7,17 +10,23 @@
 #log,#sign{
     background-color: #8ac832;
     color:white;
-    border: transparent;
+    border: none;
     text-decoration: none;
     padding: 10px;
+    border-radius: 4px;
 }
 #log:hover,#sign:hover{
     background-color: #dbf2bb;
 }
-.line{
-    width: 145px;
-    border: 1px solid;
+.input100{
+     border: none;
+     border-bottom: 1px solid black;
+     overflow: hidden;
 }
+.input::after{
+    background-color: transparent;
+}
+
 #connectgoogle,#connectlink {
     border-radius: 35px;
     width: 59px;
