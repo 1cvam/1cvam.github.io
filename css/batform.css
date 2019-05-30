@@ -1,18 +1,20 @@
 #border_1{
     height: auto;
+    border: 45px solid green;
     
 }
 #border_2{
-      background-image: url(../assets/img/ExMyB_Logo.png);
+    
       height: auto;
       background-color: white;
       background: no-repeat;
-      border:45px solid url(../assets/img/ExMyB_Logo.png); 
+      
 }
 #mainform{
-    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/ExMyB_Logo.png);
+    background-size: cover;
     height:auto;
     padding: 10px;
     
-
 }
