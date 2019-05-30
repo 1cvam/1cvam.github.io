@@ -1,6 +1,30 @@
+*{
+    font-family: Maven Pro;
+}
+
 #main{
     height: auto;
     padding: 10px;
     
     box-shadow: 2px 2px 5px 5px #e6ecdd70;
+}
+#log,#sign{
+    background-color: #8ac832;
+    color:white;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+#log:hover,#sign:hover{
+    background-color: #dbf2bb;
+}
+
+.input100{
+    border: none;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+.input::after{
+   background-color: transparent;
 }

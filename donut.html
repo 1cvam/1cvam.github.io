@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<header>
+<meta charset="utf-8">
+
+<style>
+/* Load animation */
+
+@-webkit-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@-moz-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+
+/* Container */
+
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+/* Item */
+
+.progress>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+.progress>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+
+.progress>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="./css/foot.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+<link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+</header>
+
+<body>
+<div id="css-script-menu">
+  <div class="css-script-center">
+    <ul>
+      <li><a href="http://www.cssscript.com/animated-circular-progress-bar-using-svg-path-animation/">Download</a></li>
+      <li><a href="http://www.cssscript.com/">Back To CSS Script</a></li>
+    </ul>
+    <div class="css-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* CSSScript Demo Page */
+google_ad_slot = "3025259193";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+      <script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <div class="css-script-clear"></div>
+  </div>
+</div>
+<h1 style="margin-top:150px;" align="center">Animated Circular Progress Bar Demos</h1>
+<!--  Container  -->
+<ul class="progress">
+  <!--  Item  -->
+  <li data-name="SVG Skill" data-percent="13%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="3" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="81"></path>
+    </svg> </li>
+  <!--  Item  -->
+  <li data-name="HTML5 Skill" data-percent="87%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="2" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
+    </svg> </li>
+  <!--  Item  -->
+  <li data-name="jQuery Skill" data-percent="13%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="12" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="81"></path>
+    </svg> </li>
+  <!--  Item  -->
+  <li data-name="UI Skill" data-percent="97%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="9" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="610"></path>
+    </svg> </li>
+  <!--  Item  -->
+  <li data-name="PHP Skill" data-percent="58%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="6" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="364"></path>
+    </svg> </li>
+  <!--  Item  -->
+  <li data-name="CSS Skill" data-percent="100%"> <svg viewBox="-10 -10 220 220">
+    <g fill="none" stroke-width="6" transform="translate(100,100)">
+      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+    </g>
+    </svg> <svg viewBox="-10 -10 220 220">
+    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
+    </svg> </li>
+</ul>
+<!--  Defining Angle Gradient Colors  --> 
+<svg width="0" height="0">
+<defs>
+  <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#618099"/>
+    <stop offset="100%" stop-color="#8e6677"/>
+  </linearGradient>
+  <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#8e6677"/>
+    <stop offset="100%" stop-color="#9b5e67"/>
+  </linearGradient>
+  <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+    <stop stop-color="#9b5e67"/>
+    <stop offset="100%" stop-color="#9c787a"/>
+  </linearGradient>
+  <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+    <stop stop-color="#9c787a"/>
+    <stop offset="100%" stop-color="#817a94"/>
+  </linearGradient>
+  <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+    <stop stop-color="#817a94"/>
+    <stop offset="100%" stop-color="#498a98"/>
+  </linearGradient>
+  <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+    <stop stop-color="#498a98"/>
+    <stop offset="100%" stop-color="#618099"/>
+  </linearGradient>
+</defs>
+</svg>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<footer class="fixed-bottom">
+       
+    <div class="container text-center text-md-left"
+         style= "background-color:white; font-size: 15px; height:100px;">
+    
+          <div class="row">
+                
+            <div class="col-md-2 mx-auto">
+               <img src="./assets/img/ExMyB_Logo.png" style="width: 115px; height: 130px; margin-top: -42px;">
+               <br>
+              <p style="margin-top: -30px; padding-left: 21px;"> <small>© 2018-2019</small></p>
+            </div>
+            
+            <div class="col-md-2 mx-auto">
+             <h5>About</h5>
+             <ul class="list-unstyled" >
+                    <li><a href="about.html" style=" color :black;">About us</a></li>
+                    <li><a href="bocards.html" style=" color :black;">For Business Owners</a></li>
+                    <li><a href="incards.html" style=" color :black;">For Investors</a></li>
+             </ul>
+            </div> 
+           
+            <div class="col-md-2 mx-auto">
+              <h5>Explore</h5>
+              <ul class="list-unstyled">
+                <li><a href="login.html" style=" color :black;">Login</a></li>
+                <li><a href="faq.html" style=" color :black;">FAQs</a></li>
+                <li><a href="blog.html" style=" color :black;">Blog</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-md-2 mx-auto">
+              <h5>Follow Us</h5>
+              <ul class="list-unstyled">
+              <li>
+                <a class="fab fa-facebook-f" 
+                   href="https://www.facebook.com/ExMyB/" 
+                   id="fb"></a>
+                <a class="fab fa-instagram" 
+                 href="https://www.instagram.com/ExMyB/" 
+                 id="insta"></a>
+                <a class="fab fa-linkedin-in" 
+                 href="https://www.linkedin.com/company/expand-my-business/" 
+                 id="lin">
+                </a>
+              </li> 
+              </ul>    
+            </div>
+    
+       <div class="col-md-2 mx-auto">
+            <h5>Contact</h5>
+            <p style="color: #6a6e71">contact@exmyb.com</p>
+       </div>
+    
+          </div>
+
+    </div>     
+  <!--script type="text/javascript" src="./js/about.js"></script!-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</footer>   
+</html>

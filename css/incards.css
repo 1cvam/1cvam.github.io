@@ -1,15 +1,51 @@
-#in-cardone, #in-cardtwo{
-    height: 223px;
-    background-color: #f4f4f4;
-    position: relative;
-    font-size: 12px;
-    
+#card{
+  background-color:  #f4f4f4;
+  box-shadow: 1px 1px 2px 2px #d0c9c982;
+  margin-top:20px; 
+  height: auto;
 }
-#in-cardonedataone{
-    margin-left: 74px;
-    margin-top: 16px;
-    margin-right: -11px;
+
+#card:hover{
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2s; 
+
 }
-.fas{
-    font-size: 16px;
+
+#card button{
+    border: 1px solid black;
+    background: transparent;
+    background-color: #dbf2bb;
+    margin-left: 113px;
+    display: none;
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+#card:hover button{
+    display: block;
+}
+
+#data{
+  height: auto; 
+  background-color: #f4f4f4;
+  font-size: 12px;
+  position: relative;
+  padding: 10px;
+}
+
+#avtr{
+    background-color: #dbf2bb;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    margin-left: -53px;
+    margin-top: 34px;
+    border: 2px solid black;
 }

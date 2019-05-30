@@ -20,9 +20,9 @@
     transform: translateX(-100%);
 }
 
-    .header-wrapper.expanded.has-notif .nav-sub-holder {
-        padding-top: 80px;
-    }
+.header-wrapper.expanded.has-notif .nav-sub-holder {
+    padding-top: 80px;
+}
 
 .header-page-title, .header-search-input {
     font-weight: 400;
@@ -259,18 +259,57 @@
     background-color: #f4f4f4;
     width:100% ;
 }
-#in-cardone, #in-cardtwo{
-    height: 223px;
+#card{
+    background-color:  #f4f4f4;
+    box-shadow: 1px 1px 2px 2px #d0c9c982;
+    margin-top:20px; 
+    height: auto;
+  }
+  
+  #card:hover{
+      cursor: pointer;
+      animation-name: bounce;
+      -moz-animation-name: bounce;
+      -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2s; 
+  
+  }
+  
+  #card button{
+      border: 1px solid black;
+      background: transparent;
+      background-color: #dbf2bb;
+      margin-left: 113px;
+      display: none;
+      box-shadow: 1px 1px 2px 2px black;
+  }
+  
+  #card:hover button{
+      display: block;
+  }
+  
+  #data{
+    height: auto; 
     background-color: #f4f4f4;
-    position: relative;
     font-size: 12px;
-    
-}
-#in-cardonedataone{
-    margin-left: 74px;
-    margin-top: 16px;
-    margin-right: -11px;
-}
+    position: relative;
+    padding: 10px;
+  }
+  
+  #avtr{
+      background-color: #dbf2bb;
+      position: absolute;
+      width: 150px;
+      height: auto;
+      margin-left: -53px;
+      margin-top: 34px;
+      border: 2px solid black;
+  }
 .fas{
     font-size: 19px;
 }

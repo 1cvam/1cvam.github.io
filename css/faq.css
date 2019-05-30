@@ -1,4 +1,7 @@
-#heading{  
+*{
+    font-family: Maven Pro;
+}
+.heading{  
     color: #8ac832;
     
     margin-top: 44px;
@@ -22,20 +25,32 @@
 #qseven, #qeight, #qnine, #qten, #qeleven, #qtwelve{
     color: black;
     background-color: white;
-    height: 92px;
-    padding-left: 10px;
-    padding-top: 29px;
-    padding-right: 10px;
+    height:auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px 4px #f4f4f4;  
+    padding: 13px;
+    margin-bottom: 20px;
 }
 #qone:hover, #qtwo:hover, #qthree:hover, #qfour:hover, #qfive:hover, #qsix:hover,
 #qseven:hover, #qeight:hover, #qnine:hover, #qten:hover, #qeleven:hover, #qtwelve:hover{
     color: #8ac832;
+    border-top: 2px solid black;
 
 }
 #aone, #atwo, #athree, #afour, #afive, #asix,
 #aseven, #aeight, #anine, #aten, #aeleven, #atwelve{
     display: none;
     color: black;
-    background-color: #f4f4f4;
-    padding: 10px 10px 10px 10px;
+    background-color: white;
+    height:auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+
+}
+#qone:hover #aone, #qtwo:hover #atwo,#qthree:hover #athree, #qfour:hover #afour, #qfive:hover #afive,
+ #qsix:hover #asix,#qseven:hover #aseven, #qeight:hover #aeight, #qnine:hover #anine,
+  #qten:hover #aten, #qeleven:hover #aeleven, #qtwelve:hover #atwelve {
+    display: block;
 }

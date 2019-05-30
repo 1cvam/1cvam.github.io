@@ -1,47 +1,123 @@
 <header>
         <link rel="stylesheet" type="text/css" href="./css/batform.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/foot.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/head.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
         <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-        
+       
+       
+       
+          
 </header>
 <body style="font-family:Maven Pro;">
-   <div id="page-wrapper">
+  
        <div class="container">
-           <!-- Page Heading -->
-           <div class="row">
-                <div class="col-lg-12">
-                  <center>      
-                 <h4 class="page-header text-center" style="text-decoration:underline;">
-                    BAT 
-                 </h4>
-                 </center>
-                </div>
-          
-                <div class="col-lg-12 border-gradient border-gradient-green" id="div_main">
-                    <form>
-                        <div class="col-md-12">  
-                             <div class="col-md-8">    
-                                 <p><b>Q1:</b> Please select your gender:</p>
-                             </div>    
-                           <input type="radio" name="gender" value="male"> Male<br>
-                           <input type="radio" name="gender" value="female"> Female<br>
-                           <input type="radio" name="gender" value="other"> Other<br> 
-                        </div> 
-                        <div class="col-md-12">
-                             <div class="col-md-8"> 
-                                 <p><b>Q2:</b> Please select your gender:</p> 
-                             </div>    
-                            <input type="text" class="input_one">
-                        </div>                             
-                    </form>
-                                   
-                </div>
+          <div class="row">
+              <div class="col-lg-12" id="border_1">
+                <div class="row">  
+                   <div class="col-lg-12" id="border_2">
+                       <div class="row">
+                           <div class="col-md-12" id="mainform">    
+                                <h4 style="color: #8ac832;text-align: left">
+                                     Please fill the BAT <i class="fas fa-arrow-circle-right"></i>
+                                </h4>
+                                <br/><br/>
+                                <form>
+                                    <div class="col-md-12">  
+                                       <div class="row"> 
+                                            <div class="col-md-10">    
+                                                <a>Please select your gender:</a>
+                                                <br/>
+                                                <input type="radio" name="gender" value="male"> Male<br>
+                                                <input type="radio" name="gender" value="female"> Female<br>
+                                                <input type="radio" name="gender" value="other"> Other<br> 
+                                                  <br/>
+                                                
+                                                <a>Type of financing required?</a>
+                                                <input type="text" class="form-control">
+                                                <br/>
+                                                <a>What is the reason you are seeking funding?</a>
+                                                <input class="form-control" list="funding" type="text" placeholder="Choose Option">   
+                                                <datalist id="funding">
+                                                      <option value="Debt/Loss">
+                                                      <option value="Expansion">
+                                                      <option value="Want to Sell Business">
+                                                </datalist>
+                                                <br/>
+                                            </div>      
+                                        </div>
+                                    </div>                             
+                                </form>
+                                                         
+                           </div>
+                       </div>    
+                   </div>
+                </div>   
+              </div>  
+
            </div>  
         </div> 
-   </div>      
+         
 
 </body>
-<footer>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-</footer>            
+<footer class="fixed-bottom">
+       
+              <div class="container text-center text-md-left"
+                   style= "background-color:white; font-size: 15px; height:100px;">
+              
+                    <div class="row">
+                          
+                      <div class="col-md-2 mx-auto">
+                         <img src="./assets/img/ExMyB_Logo.png" style="width: 115px; height: 130px; margin-top: -42px;">
+                         <br>
+                        <p style="margin-top: -30px; padding-left: 21px;"> <small>© 2018-2019</small></p>
+                      </div>
+                      
+                      <div class="col-md-2 mx-auto">
+                       <h5>About</h5>
+                       <ul class="list-unstyled" >
+                              <li><a href="about.html" style=" color :black;">About us</a></li>
+                              <li><a href="bocards.html" style=" color :black;">For Business Owners</a></li>
+                              <li><a href="incards.html" style=" color :black;">For Investors</a></li>
+                       </ul>
+                      </div> 
+                     
+                      <div class="col-md-2 mx-auto">
+                        <h5>Explore</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="login.html" style=" color :black;">Login</a></li>
+                          <li><a href="faq.html" style=" color :black;">FAQs</a></li>
+                          <li><a href="blog.html" style=" color :black;">Blog</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="col-md-2 mx-auto">
+                        <h5>Follow Us</h5>
+                        <ul class="list-unstyled">
+                        <li>
+                          <a class="fab fa-facebook-f" 
+                             href="https://www.facebook.com/ExMyB/" 
+                             id="fb"></a>
+                          <a class="fab fa-instagram" 
+                           href="https://www.instagram.com/ExMyB/" 
+                           id="insta"></a>
+                          <a class="fab fa-linkedin-in" 
+                           href="https://www.linkedin.com/company/expand-my-business/" 
+                           id="lin">
+                          </a>
+                        </li> 
+                        </ul>    
+                      </div>
+              
+                 <div class="col-md-2 mx-auto">
+                      <h5>Contact</h5>
+                      <p style="color: #6a6e71">contact@exmyb.com</p>
+                 </div>
+              
+                    </div>
+          
+              </div>     
+            <!--script type="text/javascript" src="./js/about.js"></script!-->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</footer>         

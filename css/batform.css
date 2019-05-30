@@ -1,27 +1,18 @@
-#div_one{
-    background-color: #8ac832;
-    height: auto;
-}
-#div_two{
-    background-color: white;
-    height: auto;
-}
-#div_main{
-    background-color: #e4dede54;
+#border_1{
     height: auto;
     
 }
-.border-gradient {
-    border-image-slice: 1;
-    border-width: 50px;
-  }
-.border-gradient-green {
-        border-image: linear-gradient(to left, #00C853, #B2FF59);
+#border_2{
+      background-image: url(../assets/img/ExMyB_Logo.png);
+      height: auto;
+      background-color: white;
+      background: no-repeat;
+      border:45px solid url(../assets/img/ExMyB_Logo.png); 
 }
-.input_one{
+#mainform{
+    background-color: #f4f4f4;
+    height:auto;
+    padding: 10px;
     
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #000000;
-    
+
 }

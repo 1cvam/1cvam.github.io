@@ -1,3 +1,6 @@
+*{
+    font-family: Maven Pro;
+}
 #infinite-list {
     /* We need to limit the height and show a scrollbar */
     width: 200px;
@@ -10,64 +13,33 @@
     border: 10px solid black;
   }
   
-  /* Optional eye candy below: */
-  li {
-    padding: 10px;
-    list-style-type: none;
+  #profile_d{
+    font-size: 13px;
+    padding: 2px;
+    text-align: left;
+    margin-top: 10px;
   }
-  li:hover {
-    background: #ccc;
+  
+  #editp {
+      color: black;
   }
-#profiledp{
-    height: 340px;
-    width: 299px;
-    margin-left: 32px; 
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px;
-}
-#profiled{
-    padding-left: 10px;
-    margin-top: -19px;
-    
-}
-
-#profileinterest{
-    height: 131px;
-    width: 500px;
-    margin-left: 32px; 
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px;
-}
-
-
-#bat{
-    height: 300px;
-    width: 250px;
-    margin-left: 32px; 
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px;
-}
-
-#batdiv{
-    background-color: #8ac832;
-    color: white;
-    width: 153px;
-    height: 45px;
-    border-radius: 12px;
-    margin-left: 44px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 54px;
-    margin-top: 12px;
-}
-#givebat{
-    font-size: 19px;
-    margin-top: 29px;
-    padding-left: 24px;
-    padding-right: 10px;
-}
-#redeembat{
-    margin-top: 9px;
-    padding-left: 23px;
-    padding-right: 10px;
-}
+  tr:hover{
+     background-color: #8ac832;
+     color:white;
+  }
+  #profile_b{
+    font-size: 13px;
+    padding: 2px;
+    border: 1px solid #dcd7d7;
+    margin-top: 10px;
+  }
+  #profile_i{
+    height: 112px;
+    font-size: 13px;
+    padding: 12px;
+    border: 1px solid #dcd7d7;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  

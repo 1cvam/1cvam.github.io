@@ -1,102 +1,92 @@
+<!DOCTYPE Html>
+<html>
 <header>
-    <link rel="stylesheet" type="text/css" href="head.css">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/head.css">  
     <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
 </header>
 <body>
-
-
-<nav class="navbar navbar-expand-lg" style="background-color:white; width: 1280px; height: 87px;">
-   <div class=" collapse navbar-collapse navbar-left" id="navbarNav"> 
-    <a class="navbar-brand">
-        <img src="./assets/img/ExMyB_Logo.png" style="width: 115px; height: 120px;" />
-    </a>
-    <div  class="shift">
-      <ul class="navbar-nav">
-        
-       <div> 
-        <li class="nav-item">
-          <a class="nav-link" style="margin-left: 4px; margin-right: 4px;" href="#">HOME</a>
-        </li>
-       </div> 
-        
-       <div> 
-            
-          
-            <div class="dropdown" style="margin-top: 8px;margin-left: 4px; margin-right: 4px;">
-                    <a class="dropdown-toggle" 
-                    id="dropdownMenuButton" data-toggle="dropdown" 
-                    aria-haspopup="true" aria-expanded="false">
-                      BUSINESS OWNER
-                    </a>
-    
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Connect with Investor</a>
-                      <a class="dropdown-item" href="#">Connect with fellow Business Owner</a>
-                    
-                    </div>
-            </div>
-          
-                    
-                   
-        </div> 
-            
-          <div class="dropdown" style="margin-top: 8px;margin-left: 4px; margin-right: 4px;">
-              <a class="dropdown-toggle" 
-              id="dropdownMenuButton" data-toggle="dropdown" 
-              aria-haspopup="true" aria-expanded="false">
-                INVESTOR
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Connect with Business Owner</a>
-                <a class="dropdown-item" href="#">Connect with fellow Investor</a>
-              </div>
-          </div> 
-
-          <div class="dropdown" style="margin-top: 8px;margin-left: 4px; margin-right: 4px;">
-              <a class="dropdown-toggle" 
-              id="dropdownMenuButton" data-toggle="dropdown" 
-              aria-haspopup="true" aria-expanded="false">
-                SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="height: 300px; width: 310px;">
-                <a class="dropdown-item" href="#">Business Aptitude test-BAT</a>
-                <a class="dropdown-item" href="#">Mentorship</a>
-                <a class="dropdown-item" href="#">Collaboration with Incubators/Accelerators</a>
-                <a class="dropdown-item" href="#">CA Consulting</a>
-                <a class="dropdown-item" href="#">Legal Services</a>
-                <a class="dropdown-item" href="#">Procurement Consultancy Services</a>
-              </div>
-          </div> 
-     
-     
-     <div style="margin-left: 4px; margin-right: 4px;">
-        <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US</a>
-        </li>
-      </div>
-      <div style="margin-left: 4px; margin-right: 4px;">  
-        <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-        </li>
-      </div> 
-      <div style="margin-left: 4px;" >  
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg" style="box-shadow: 1px 1px 2px 2px #c5bcbc;margin-top: -21px;">
+        <a class="navbar-brand">
+          <img src="./assets/img/ExMyB_Logo.png" style="margin-top: -10px;width: 96px;height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
+              <a class="nav-link" href="home.html" id="home_1"><b>HOME</b></a>
             </li>
-          </div> 
-      </ul>
-     </div>
-     </div> 
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="home_2"><b>BUSINESS OWNER</b></a>
+                  <ul class="dropdown-menu bo-content" style="margin-left: 147px;
+                  border: transparent;
+                  border-top: 5px solid #8ac832;
+                  border-radius: 0px;">
+                    <li>
+                      <a class="nav-link dropdown-item" href="incards.html" id="home_31"><b>Connect with Investor</b></a> 
+                      
+                    </li>
+                    <li>
+                        <a class="nav-link dropdown-item" href="bocards.html" id="home_32"><b>Connect with Fellow Business Owner</b></a>
+                    </li>
+                  </ul>
+              </li>    
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="home_3"><b>INVESTOR</b></a>
+                <ul class="dropdown-menu in-content" style="margin-left: 285px;
+                border: transparent;
+                border-top: 5px solid #8ac832;
+                border-radius:0px;">
+                  <li>
+                    <a class="nav-link dropdown-item" href="bocards.html" id="home_31"><b>Connect with Business Owner</b></a> 
+                    
+                  </li>
+                  <li>
+                      <a class="nav-link dropdown-item" href="incards.html" id="home_32"><b>Connect with Fellow Investor</b></a>
+                  </li>
+                </ul>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" id="home_4"><b>ABOUT</b></a>
+              </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html" id="home_5"><b>BLOG</b></a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html" id="home_6"><b>FAQ</b></a>
+            </li> 
+            </ul> 
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button style="width: 86px;
+                margin-top: -10px;
+                height: auto;
+                padding: 0px;
+                background-color: #8ac832;
+                color: white;
+                border: transparent;
+                font-size: 14px;">
+                  <a class="nav-link" href="login.html" style="color:white;"><b>Login</b></a>
+                 </button> 
+            </li>
+          </ul>
+        </div>  
+    </nav>
+    
+</div>    
 
-      <div class=" navbar-right">
-        <ul class="nav navbar-nav">
-          <button type="button" class="btn btn-success btn-sm"  style="background-color: #8ac832;">Login<a class="fa fa-sign-in" style="font-size:17px; padding-left: 4px;"></a></button>
-       </ul>
-      </div>
-    
-    
-  </nav>
+
 </body>
+<footer>
+</footer>  
+</html>
